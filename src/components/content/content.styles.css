@@ -1,0 +1,115 @@
+.main-content{
+    margin: 0%;
+    padding: 0.5em 3em;
+    color: white;
+}
+.main-content h1{
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+.intro{
+    margin: 0%;
+    padding: 0%;
+    background-color: rgba(75 , 178, 249, 0.08);
+}
+.bg-image-div{
+    padding: 0%;
+    margin: 0%;
+}
+.bg-image-div img{
+    width: 100%;
+}
+.profile{
+    margin: 0%;
+    padding: 0em 0em 0em 1em;
+    display: flex;
+    align-items: center;
+}
+
+/* Membership types section */
+#membershipSection{
+    margin: 4em 0em 0em 0em;
+    padding: 0px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+#membershipSection h2{
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+}
+#membershipSection .card-deck{
+    /* background-color: rgba(75 , 178, 249, 0.08); */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+
+}
+#membershipSection .card{
+    color: #0b0c10;
+    /* background: linear-gradient(135deg, hsla(176, 96%, 69%, 1) 0%, hsla(213, 24%, 16%, 1) 100%);    width: 15em; */
+    transition: transform 1s ease-in-out;
+    /* transform: scale(1.1); */
+    width: 20em;
+    margin: 1.5em;
+}
+.card img{
+    width: 75px;
+}
+#membershipSection .card-body h3{
+    /* background-color: #66fcf1; */
+}
+#membershipSection .card-text{
+    display: none;
+}
+#membershipSection .wrapper .btn{
+    /* background-color: #66fcf1; */
+    background-color: #1f2833;
+    color: white;
+}
+#membershipSection .wrapper .btn:hover{
+    background-color: #66fcf1;
+    background-color: white;
+    color: #1f2833;
+}
+#membershipSection .card:hover{
+    color: #1f2833;
+    font-weight: bolder;
+    transform: scale(1.2);
+    background-color: #45a29e;
+    background-color: #84c9fb;
+    animation-name: zoom;
+    animation-duration: inherit;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: ease-in-out;
+}
+@keyframes zoom{
+    0% {transform: scale(1);}
+    50% {}
+    100% { transform: scale(1.1);} 
+}
+#membershipSection ul{
+    list-style-type: none;
+    padding: 0%;
+}
+
+@media all and (max-width: 767px){
+    .main-content{
+        padding: 1em 2em;
+    }
+    .main-content h1{
+        margin-bottom: 0.5em;
+        font-size: 1.75em;
+    }
+    .profile{
+        padding: 1em 0em;
+    }
+    #membershipSection h2{
+        margin-bottom: 0.5em;
+        font-size: 1.5em;
+    }
+}
+
+
